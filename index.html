@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive JavaScript Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>JavaScript Concepts Assignment</h1>
+
+  <!-- Form to collect user input -->
+  <form id="user-form">
+    <label for="name">Name: </label>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="email">Email: </label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <button type="submit">Submit</button>
+    <p id="form-error" class="error" style="display: none;">Please fill out all required fields!</p>
+  </form>
+
+  <!-- Interactive button to add new content to the page -->
+  <button class="interactive-btn" id="add-content-btn">Click to Add Content</button>
+
+  <div class="output" id="content-output" style="display: none;">
+    <h3>New Content:</h3>
+    <p>This content was dynamically added to the page when you clicked the button.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
